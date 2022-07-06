@@ -30,10 +30,6 @@
 start_link() ->
     supervisor:start_link({local, ?SERVER}, ?MODULE, []).
 
-%%%===================================================================
-%%% Internal functions
-%%%===================================================================
-
 init([]) ->
     SupFlags = #{strategy => one_for_all,
                  intensity => 0,
@@ -44,3 +40,16 @@ init([]) ->
     ],
 
     {ok, {SupFlags, ChildSpecs}}.
+
+%%%===================================================================
+%%% Internal functions
+%%%===================================================================
+
+create_child(ID, Module, Inputs, Type) ->
+    #{
+        id => ID,
+        start => {Module, start_link, Inputs},
+        restart => permanent,
+        shutdown => brutal_kill,
+        type => Type
+    }.

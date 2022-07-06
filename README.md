@@ -1,9 +1,14 @@
-{{name}}
-=====
+<h1 align='center'>
+ 	{{name}}
+</h1>
 
-{{desc}}
+<h2 align='center'>
+	{{desc}}
+</h2>
 
-Build
------
+<details>
+  <summary><b>Build</b></summary>
 
     $ rebar3 compile
+
+</details>

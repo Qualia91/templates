@@ -1,4 +1,4 @@
-{description, "Complete OTP Application structure."}.
+{description, "Complete OTP Application structure with lager included."}.
 
 {variables, [
     {name, "mylib", "Name of the OTP application"},
@@ -10,13 +10,13 @@
 
 {template, "app.erl", "{{name}}/src/{{name}}_app.erl"}.
 {template, "sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
-{template, "otp_app.app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "otp_appl.app.src", "{{name}}/src/{{name}}.app.src"}.
 
-{template, "sys.config", "{{name}}/config/sys.config"}.
+{template, "sysl.config", "{{name}}/config/sys.config"}.
 
 {template, "header.hrl", "{{name}}/include/{{name}}.hrl"}.
 
-{template, "app_rebar.config", "{{name}}/rebar.config"}.
+{template, "app_rebarl.config", "{{name}}/rebar.config"}.
 {template, "gitignore", "{{name}}/.gitignore"}.
 {template, "LICENSE", "{{name}}/LICENSE"}.
 {template, "README.md", "{{name}}/README.md"}.
