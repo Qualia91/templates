@@ -2,14 +2,12 @@
 %%% @doc
 %%% Top level application module.
 %%% @author {{author_name}}
-%%% @copyright {{default_licence}}
-%%% @version {{version}}
 %%% @date {{date}}
 %%% @end
 %%%-----------------------------------------------------------------------------
 
 -module({{name}}_app).
--author({{author_name}}).
+-author("{{author_name}}").
 
 -behaviour(application).
 

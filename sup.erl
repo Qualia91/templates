@@ -2,14 +2,12 @@
 %%% @doc
 %%% Top level application supervisor
 %%% @author {{author_name}}
-%%% @copyright {{default_licence}}
-%%% @version {{version}}
 %%% @date {{date}}
 %%% @end
 %%%-----------------------------------------------------------------------------
 
 -module({{name}}_sup).
--author({{author_name}}).
+-author("{{author_name}}").
 
 -behaviour(supervisor).
 
